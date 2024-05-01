@@ -3,7 +3,7 @@
             font-weight: 400;
             font-style: normal;
             line-height: 1.3;}
-        header{margin: auto; margin: 20px 0 200px 0; display: flex; 
+        header{margin: auto; margin: 0px 0 200px 0; display: flex; 
         justify-content: space-between; background: black;
         align-items: center;}
         body,h1,h2,h3,p,footer{margin: 0;padding: 0; word-break: keep-all;}
@@ -11,10 +11,10 @@
         section{background: white;}
         p{padding-top: 20px; font-weight: 300; line-height: 30px; font-size: 1.2rem;}
         .wrap{width: 1200px; margin: auto;position: relative;}
-        .menu{margin: 0px; padding: 0px; display: flex; justify-content: space-between;}
+        .menu{margin: 0px; padding: 0px; display: flex; justify-content: space-between; z-index: 1;}
         .menu li{list-style: none;text-align: center;}
         .menu li a{padding: 10px 10px;display: block; background: black;
-                font-weight: 400;
+                font-weight: 700;
                 font-style: normal;
                 font-size: 1.2rem;
                 text-decoration: none;
@@ -25,14 +25,17 @@
         from {transform: translateY(-20px);}to {transform: translateY(20px);}}
         .bgbl{background-color: black; color: white;}
         .bggl{background-color: lightgray; color: white;}
+        .bgwh{background-color: white; color: black;}
         .upspc{padding-top: 200px;}
         .downspc{padding-bottom: 200px;}
         .stick1{position: relative; left: 300px; top: -100px;}
         .fixed{ background-attachment:fixed;
                 background-image: url(../img/뉴런.gif);
                 background-size: cover;}
-        .flex2{display: flex; gap: 5%;}
-        .flexitem{width: 50%; flex: none;}
+        .fix{position: fixed; width: 100%;}
+        .flex{display: flex; gap: 0%; margin: auto;}
+        .flex2{display: flex; gap: 10%; margin: auto;}
+        .flexitem{width: 40%; flex: none; margin: auto;}
         .fleximg{height: 400px;}
         .section-with-bg {
         background-image: url('../img/청소기.jpg');
@@ -63,7 +66,7 @@
         animation: fadeInUp 1s ease forwards;
         animation-delay: 0.5s;}
 
-        .img1{background: url("../img/청소기 흡입구.png");background-size:cover;}
+        .img1{background: url("../img/청소기 흡입구.png"); background-size:cover;}
         .img2{background: url("../img/청소기 합성구.png");background-size:cover;}
         .img3{background: url("../img/청소기 분출구.png");background-size: cover;}
 
@@ -93,9 +96,18 @@
             100% { left:-100%; }
         }
 
-        .smaller {flex: 1; max-width: 10%;}
+        .smaller {flex: 1; width: 10%;}
 
         .mimg{position: relative;}
         .mimgtxt{position: absolute;
-                top: 50%; left: 50%;
+                top: 30px; left: 130px;
                 transform: translate(-50%, -50%);}
+        .center{text-align: center;}
+        .memento{font-size: 100px; font-weight:900; margin-left: 50px;}
+        .twostar{font-weight: 900; font-size:100px; padding-left: 500px;}
+        .lovesec{font-weight: 200; font-size: 20px; text-align: center;}
+        .percentsec{font-weight: 600; font-size: 23px; line-height: 2.5rem;}
+        .detail{font-size: 100px; text-align: center; font-weight: 900;}
+        .erase{text-align:center; font-size: 20px; font-weight: 900px;}
+        .garu{style="width: 50%; margin-left: -100px; font-size: 0.7rem;}
+        .promo{font-size: 30px; line-height: 2.2rem; left: -100px; font-weight: 700;}
